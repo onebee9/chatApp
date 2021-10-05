@@ -28,10 +28,9 @@ profileName.classList.add("profileName");
 roomDisplay.appendChild(selectedRoom);
 displayName.appendChild(profileName);
 
-/**  function list for displaying typing indicator, hiding it when users are donte typing and displaying online users*/
-
-const showIncomingAlert = (username) => {  //show typing alert
- 
+/**  function list */
+const showIncomingAlert = (username) => {
+  //show typing alert
   if (username !== "chabot") {
     if (!incomingDivs[username]) {
       incomingDivs[username] = document.createElement("p");
@@ -42,7 +41,7 @@ const showIncomingAlert = (username) => {  //show typing alert
     incomingDivs[username].classList.add("visible-incoming");
   }
 };
-const hideIncomingAlert = (username) => {  //hide typing alert
+const hideIncomingAlert = (username) => { //hide typing alert
   
   if (username !== "chabot") {
     incomingDivs[username].textContent = "";
@@ -72,7 +71,7 @@ const displayAvailableRooms = (roomData) => { // display list of available rooms
   room.setAttribute("data-kind", "room");
   roomlist.appendChild(room);
 };
-const removeDisconnectedUsers = (userId) => {  //remove disconnected users from userList.
+const removeDisconnectedUsers = (userId) => {//remove disconnected users from userList.
   let offlineUser = document.getElementById(userId);
   offlineUser.parentNode.removeChild(offlineUser);
 };

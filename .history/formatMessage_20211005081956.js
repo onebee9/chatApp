@@ -13,6 +13,6 @@ let date_recieved = new Date().toLocaleTimeString();
 
 
 
-// export function for formatting chatbot messages
+
 exports.botMessage = botMessage;
 
