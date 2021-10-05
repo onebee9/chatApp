@@ -1,0 +1,285 @@
+@import "fonts/gilroy/stylesheet.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+Html {
+  min-height: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy", sans-serif;
+  background-color: #efefef;
+  line-height: 1;
+}
+/*font weight classess**/
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
+}
+
+/*font size classess **/
+.fs-large-medium {
+  font-size: 18px;
+}
+.fs-medium {
+  font-size: 14px;
+}
+.fs-small {
+  font-size: 12px;
+}
+.fs-xsmall {
+  font-size: 10px;
+}
+
+/*quick adjustments*/
+.fivePx {
+  margin-top: 5px;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+#leftPanel {
+  background-color: rgb(23, 24, 28);
+  overflow: scroll;
+  width: 270px;
+  flex-shrink: 0;
+}
+#leftPanelGroup {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 0px 30px;
+}
+#leftPanel #leftHeader {
+  margin-bottom: 12px;
+}
+
+#leftPanel h2 {
+  color: whitesmoke;
+  font-weight: 200;
+  font-size: 30px;
+  padding-left: 0px;
+}
+#leftPanel #userList {
+  color: rgb(206, 205, 205);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#leftPanel #rooms {
+  color: rgb(206, 205, 205);
+  margin-bottom: 10px;
+}
+.activeRoom{
+  font-weight: 700;
+}
+#leftPanel h4 {
+  color: white;
+  font-size: 18px;
+}
+#leftPanel #rooms p,
+#leftPanel #userList p {
+  color: rgb(206, 205, 205);
+  margin-top: 10px;
+  padding: 5px 0px;
+  font-size: 14px;
+}
+#leftPanel a {
+  color: rgb(206, 205, 205);
+  margin-top: 10px;
+  padding: 5px 0px;
+  font-size: 14px;
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+#leftPanel #profile {
+  background-color: black;
+  position: absolute;
+  bottom: 35px;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+#profile {
+  margin: 10px;
+}
+#leftPanel #profile #info {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0;
+  width: 100%;
+}
+.profileName,
+#description {
+  display: inline;
+  text-transform: capitalize;
+}
+
+img {
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+}
+#rightPanel {
+  padding: 20px;
+}
+#rightPanelGroup {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  align-content: stretch;
+  position: relative;
+  height: 100%;
+  min-width: 800px;
+}
+#messageHeader {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 3px;
+}
+.username_Display {
+  display: grid;
+  font-size: 12px;
+  color: black;
+  font-weight: bold;
+}
+.incoming-messages {
+  margin: 5px;
+  display: block;
+  color: black;
+  font-size: 12px;
+  font-weight: 400;
+  float: right;
+}
+.hidden-incoming {
+  display: block;
+  color: #efefef;
+  font-size: 12px;
+  font-weight: 600;
+  float: right;
+}
+
+.visible-incoming {
+  display: grid;
+  font-size: 12px;
+  color: black;
+}
+#titleBar {
+  display: inline-block;
+}
+
+#messageBody {
+  overflow: scroll;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+#messageBody #messageGroup {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#messageDetails {
+  padding-left: 5px;
+}
+#messageDetails .messageText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+#messageDetails .messageTime {
+  display: inline;
+  font-size: 10px;
+  font-weight: 500;
+  padding-top: 3px;
+  padding-left: 2px;
+}
+#messageDetails .author {
+  display: inline;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+#messageBox {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+textarea {
+  width: 100%;
+  outline: none;
+  padding: 8px;
+  resize: none;
+  color: black;
+  word-wrap: break-word;
+}
+textarea::placeholder {
+  font-size: 10px;
+}
+#msgbutton {
+  float: right;
+}
+.RoomHighlight{
+  color: white;
+  font-weight: 600;
+}
+/** Beginning of css for login page**/
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input ::placeholder {
+  font-weight: 500;
+}
+
+#loginSubmit {
+  background-color: rgb(24, 26, 28);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.loginContainer {
+  padding: 16px;
+  margin: auto;
+  width: 50%;
+}

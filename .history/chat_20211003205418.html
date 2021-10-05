@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>TheTalk</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <div id="container">
+      <div id="leftPanel">
+        <div id="leftPanelGroup">
+          <div id="leftHeader">
+            <span class="fw-700"><a href="index.html">The Talk </a></span> 
+          </div>
+          <div id="userList">
+            <h4>Users</h4>
+            <div id = "onlineUsersDisplay"></div>
+          </div>
+          <div id="rooms">
+            <h4>Rooms</h4>
+            <div id ="availableRooms"></div>
+          </div>
+          <div id="profile">
+              <div id="info">
+                <p id = "profileName" class="fs-medium profileName"></p>
+                <p id="description" class="fs-small fw-400 fivePx"> Profile</p>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="rightPanel">
+        <div id="rightPanelGroup">
+          <div id="messageHeader">
+            <div id="titleBar">
+              <p id ="room" class="fw-600 fs-large-medium fivePx"></p>
+              <p id="memberCount" class="fs-xsmall fw-300">36 Members</p>
+            </div>
+            <div id="incoming-messages" class="incoming-messages">
+              <p id="incoming" class="hidden-incoming"></p>
+            </div>
+          </div>
+          <div id="messageBody">
+            <div id="messageGroup">
+              <div id="messageProfilePic"></div>
+              <div data-kind="room"id="messageDetails"></div>
+            </div>
+          </div>
+          <div id="messageBox">
+            <form id="chatForm">
+              <textarea id="message" name="message" rows="4" autofocus>
+              </textarea>
+              <button id="msgbutton" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js" defer></script>
+    <script type="module" src="/node_modules/socket.io/client-dist/socket.io.js"></script>
+  </body>
+</html>

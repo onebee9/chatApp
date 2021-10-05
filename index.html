@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form id="getInfo" method="POST">
+      <div class="loginContainer">
+        <label for="username" class="fw-500">Username</label>
+        <input
+          id="username"
+          name="username"
+          type="text"
+          placeholder="Enter Username"
+          required
+          >
+        <label for="room" class="fw-500">Select Room</label>
+        <select id="room" name="room">
+          <option disabled>Available rooms</option>
+          <option value="Travel & Tourism">Travel & Tourism</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Expat">Expat</option>
+          <option value="Fishing">Fishing</option>
+        </select>
+        <button id="loginSubmit" type="submit">Login</button>
+      </div>
+    </form>
+    <script src="node_modules/socket.io/client-dist/socket.io.js"></script>
+    <script src="auth.js"></script>
+    <script src ="index.js"></script>
+  </body>
+</html>
