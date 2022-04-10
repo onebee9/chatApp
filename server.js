@@ -5,7 +5,7 @@ const io = require ("socket.io")(server);
 
 //get local modules for formating messages and processing users
 const autoRespond = require ("./formatMessage");
-const users = require("./users.js");
+const users = require("./HerlperFunctions.js");
 
 //set port and chatbot variables
 const PORT = 8080;

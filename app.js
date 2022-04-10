@@ -118,8 +118,6 @@ if (chatForm) { // submits message and its sttributes to server
       else {
         socket.emit("chatMessage", {newMessage, username, chosenRoom});
       }
-
-    
   });
 }
 

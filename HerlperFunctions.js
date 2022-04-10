@@ -1,4 +1,16 @@
+//create and store the time a message is recieved
 let date_recieved = new Date().toLocaleTimeString();
+
+
+//message object to add a username and time to bot messages.
+ function botMessage(username, msg) {
+    let sentMessageObj = {
+        username,
+        message: msg,
+        time: date_recieved,
+    };
+    return sentMessageObj;
+};
 
 const formatUsers = (msg) => {
   let sentMessageObj = {
@@ -11,8 +23,8 @@ const formatUsers = (msg) => {
 };
 
 const userList = (id,username,room) => {
-  let ConnectedUser = {id,username,room};
-  return ConnectedUser;
+  let connectedUser = {id,username,room};
+  return connectedUser;
 };
 
 const searchArrayObj = (nameKey, myArray) => {
