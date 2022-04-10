@@ -17,6 +17,6 @@ Enabling users to send direct messages
 * Implementing Translation services via the microsoft translate API 
 
 ## Screenshots
-!["Login"](https://github.com/onebee9/resourceWall/blob/master/Docs/Login.png)
+!["Login"](https://github.com/onebee9/chatapp/blob/master/Docs/Login.png)
 !["Chat screen - 1 user"](https://github.com/onebee9/chatapp/blob/master/Docs/1-User.png)
 !["Chat screen"](https://github.com/onebee9/chatapp/blob/master/Docs/Multiple-Users.png)
